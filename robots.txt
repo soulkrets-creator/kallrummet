@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://privat.bahnhof.se/wb111178/sitemap.xml
+Sitemap: https://soulkrets-creator.github.io/kallrummet/sitemap.xml
