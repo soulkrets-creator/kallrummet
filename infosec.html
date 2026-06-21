@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSec Hub | Källrummet</title>
+    <meta name="description" content="InfoSec Hub är en minimalistisk kunskaps- och bevakningssida för informationssäkerhet, GDPR, NIS2, säkerhetsskydd, ISO 27001, CVE, SCADA, incidenthantering och hemchecklistor.">
+    <meta name="keywords" content="informationssäkerhet, InfoSec, cybersäkerhet, GDPR, NIS2, säkerhetsskyddslagen, Sveriges säkerhet, säkerhetskänslig verksamhet, ISO 27001, ISO 27701, ISO 22301, ISO 19011, NIST, NIST CSF, CIS Controls, MITRE ATT&CK, CISA, ENISA, NCSC, CVE, SCADA, ICS, NBA, MSB, IMY, CERT-SE, Aktuell Säkerhet, Kvalitetsmagasinet, Swedac, MSI, PTS, SäkerhetsBranschen, SecurityWorldMarket, Social Engineering Hub, FRA, DIGG, SIS, OWASP, ISACA, ISC2, BCI, Business Continuity Institute, Zero Trust, Least Privilege, Attack Surface, Asset Inventory, Threat Modeling, SBOM, Supply Chain Risk, MFA fatigue, EDR, XDR, SIEM, SOAR, Parkerian Hexad, KRTS, CIA, BIA, SWOT, PESTLE, Defense in Depth, hemmasäkerhet, routersäkerhet, iPhone säkerhet, Android säkerhet, backup, kryptering, IT-ordlista, Computer Sweden">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; form-action 'self'; img-src 'self' data: https:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://api.allorigins.win https://api.rss2json.com https://api.codetabs.com; upgrade-insecure-requests">
+    <link rel="canonical" href="https://privat.bahnhof.se/wb111178/infosec.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:title" content="InfoSec Hub | Källrummet">
+    <meta property="og:description" content="En textbaserad hubb för informationssäkerhet, regelverk, standarder, hotbild, analysmetoder och praktiska checklistor.">
+    <meta property="og:url" content="https://privat.bahnhof.se/wb111178/infosec.html">
+    <meta property="og:image" content="https://privat.bahnhof.se/wb111178/logonews.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="271">
+    <meta property="og:image:alt" content="Källrummet – InfoSec Hub">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InfoSec Hub | Källrummet">
+    <meta name="twitter:description" content="Minimalistisk bevakning av informationssäkerhet, ISO, GDPR, NIS2, CVE, metodstöd och praktiska checklistor.">
+    <meta name="twitter:image" content="https://privat.bahnhof.se/wb111178/logonews.jpg">
+    <meta name="twitter:image:alt" content="Källrummet – InfoSec Hub">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Källrummet">
+    <meta name="theme-color" content="#f4c542">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.allorigins.win">
+    <link rel="dns-prefetch" href="https://api.rss2json.com">
+    <link rel="dns-prefetch" href="https://api.codetabs.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2026-05-20-7">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "InfoSec Hub | Källrummet",
+      "url": "https://privat.bahnhof.se/wb111178/infosec.html",
+      "description": "En minimalistisk hubb för informationssäkerhet, NIS2, säkerhetsskydd, standarder, hotbild, SCADA, incidenthantering, ramverk, kontrollfrågor och hemchecklistor.",
+      "inLanguage": "sv-SE",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Källrummet",
+        "url": "https://privat.bahnhof.se/wb111178/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <main class="container infosec-page">
+        <header class="infosec-header">
+            <p class="infosec-kicker">The Security Dashboard</p>
+            <h1>InfoSec Hub</h1>
+            <p class="infosec-status">Systemstatus: bevakning aktiv | Senast uppdaterad <span id="infosec-date">-</span></p>
+        </header>
+
+        <section class="infosec-search" aria-labelledby="infosec-search-heading">
+            <h2 id="infosec-search-heading">Metasök: Standarder &amp; CVE</h2>
+            <form id="infosec-search-form">
+                <label class="visually-hidden" for="infosec-query">Sök informationssäkerhet, standarder eller sårbarheter</label>
+                <input id="infosec-query" name="query" type="search" placeholder="Sök på ISO 27001, NIST, CVE, NVD eller exploaterade sårbarheter" autocomplete="off">
+                <button type="submit">Sök</button>
+            </form>
+            <p class="infosec-help">Söker främst mot ISO, NIST, NVD, CVE, CISA och MITRE via färdiga sök-URL:er. Ingen skrapning eller backend används.</p>
+        </section>
+
+        <section class="infosec-grid" aria-label="Informationssäkerhet">
+            <article class="infosec-card">
+                <h2>Regelverk &amp; myndigheter</h2>
+                <p>Bevakning av svensk informationssäkerhet, dataskydd, NIS2, säkerhetsskydd och nationell beredskap.</p>
+                <ul>
+                    <li><strong>NIS2:</strong> högre gemensam cybersäkerhetsnivå i EU, fler sektorer, tydligare riskkrav och högre sanktionsavgifter.</li>
+                    <li><strong>Säkerhetsskyddslagen:</strong> bredare fokus på Sveriges säkerhet, säkerhetskänslig verksamhet och skydd mot spioneri, sabotage och terrorism.</li>
+                    <li><strong>Incidentrapportering:</strong> samhällsviktiga och digitala tjänster behöver kunna upptäcka, bedöma och rapportera betydande incidenter.</li>
+                    <li><strong>NCC:</strong> myndighetssamverkan för att stärka Sveriges samlade motståndskraft mot avancerade cyberangrepp.</li>
+                    <li><a href="https://www.imy.se/nyheter/" target="_blank" rel="noopener noreferrer">IMY: GDPR och personuppgifter</a></li>
+                    <li><a href="https://www.msb.se/" target="_blank" rel="noopener noreferrer">MSB: samhällsskydd och beredskap</a></li>
+                    <li><a href="https://www.cert.se/" target="_blank" rel="noopener noreferrer">CERT-SE: sårbarheter och incidenter</a></li>
+                    <li><a href="https://www.mcf.se/sv/amnesomraden/informationssakerhet-och-cybersakerhet/" target="_blank" rel="noopener noreferrer">MCF: informationssäkerhet och cybersäkerhet</a></li>
+                    <li><a href="https://www.sakerhetspolisen.se/sakerhetsskydd.html" target="_blank" rel="noopener noreferrer">Säpo: säkerhetsskydd</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>ISO &amp; standardisering</h2>
+                <p>Ramverk för ledningssystem, kontinuitet, revision och systematiskt förbättringsarbete.</p>
+                <ul>
+                    <li><a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener noreferrer">ISO 27001: ledningssystem för informationssäkerhet</a></li>
+                    <li><a href="https://www.iso.org/standard/75106.html" target="_blank" rel="noopener noreferrer">ISO 22301: kontinuitetshantering</a></li>
+                    <li><a href="https://www.iso.org/standard/70017.html" target="_blank" rel="noopener noreferrer">ISO 19011: revision av ledningssystem</a></li>
+                    <li><a href="https://www.sis.se/standarder/" target="_blank" rel="noopener noreferrer">SIS: svenska standarder</a></li>
+                    <li><a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">NIST Cybersecurity Framework</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Hotbild &amp; incidenter</h2>
+                <p>Snabba ingångar till CVE, ransomware, DoS, SCADA, realtidsbevakning och molnsäkerhet.</p>
+                <ul>
+                    <li><strong>SCADA &amp; ICS:</strong> övervakning av sårbarheter i industriella styrsystem, elnät, vattenförsörjning och annan kritisk infrastruktur.</li>
+                    <li><strong>NBA:</strong> Network Behavioural Analysis för att upptäcka avvikande trafikmönster och pågående angrepp i realtid.</li>
+                    <li><strong>DoS/DDoS:</strong> skydd mot storskaliga överbelastningsattacker mot samhällsviktiga tjänster.</li>
+                    <li><strong>Social engineering:</strong> mänskliga hot, manipulation, phishing och angrepp som kringgår tekniska kontroller.</li>
+                    <li><strong>Löpande monitorering:</strong> kontinuerlig övervakning och snabb åtgärd kompletterar preventiva skydd.</li>
+                    <li><a href="https://www.social-engineer.org/" target="_blank" rel="noopener noreferrer">The Official Social Engineering Hub</a></li>
+                    <li><a href="https://www.cve.org/" target="_blank" rel="noopener noreferrer">CVE: sårbarhetsdatabas</a></li>
+                    <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener noreferrer">NVD: NIST vulnerability database</a></li>
+                    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">CISA: exploaterade sårbarheter</a></li>
+                    <li><a href="https://www.bleepingcomputer.com/tag/ransomware/" target="_blank" rel="noopener noreferrer">BleepingComputer: ransomware</a></li>
+                    <li><a href="https://aws.amazon.com/security/security-bulletins/" target="_blank" rel="noopener noreferrer">AWS: säkerhetsbulletiner</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Analys &amp; metodstöd</h2>
+                <p>Korta hållpunkter för riskanalys, omvärldsanalys, kontinuitet, mätetal och incidentledning.</p>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=SWOT+informationss%C3%A4kerhet+riskanalys" target="_blank" rel="noopener noreferrer">SWOT: styrkor, svagheter, möjligheter, hot</a></li>
+                    <li><a href="https://www.google.com/search?q=PESTLE+cybersecurity+risk+analysis" target="_blank" rel="noopener noreferrer">PESTLE: politiska, ekonomiska, sociala, tekniska, miljömässiga och legala faktorer</a></li>
+                    <li><a href="https://www.google.com/search?q=Business+Impact+Analysis+information+security" target="_blank" rel="noopener noreferrer">BIA: Business Impact Analysis</a></li>
+                    <li><strong>Parkerian Hexad:</strong> confidentiality, integrity, availability, authenticity, possession/control och utility.</li>
+                    <li><strong>KPIs:</strong> antal säkerhetsincidenter per månad, time to recovery och incidentrelaterade kostnader.</li>
+                    <li><a href="https://www.iso.org/standard/75106.html" target="_blank" rel="noopener noreferrer">Kontinuitet: planering och återhämtning</a></li>
+                    <li><a href="https://www.axelos.com/certifications/itil-service-management" target="_blank" rel="noopener noreferrer">ITIL: incident- och tjänstehantering</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="infosec-grid infosec-directory" aria-label="Källbibliotek för informationssäkerhet">
+            <article class="infosec-card">
+                <h2>Sverige</h2>
+                <p>Myndigheter, robust kommunikation, standardisering och nationell cybersäkerhet.</p>
+                <ul>
+                    <li><a href="https://www.msb.se/" target="_blank" rel="noopener noreferrer">MSB</a></li>
+                    <li><a href="https://www.cert.se/" target="_blank" rel="noopener noreferrer">CERT-SE</a></li>
+                    <li><a href="https://www.aktuellsakerhet.se/" target="_blank" rel="noopener noreferrer">Aktuell Säkerhet</a></li>
+                    <li><a href="https://www.imy.se/" target="_blank" rel="noopener noreferrer">Integritetsskyddsmyndigheten</a></li>
+                    <li><a href="https://www.sakerhetspolisen.se/" target="_blank" rel="noopener noreferrer">Säkerhetspolisen</a></li>
+                    <li><a href="https://www.forsvarsmakten.se/" target="_blank" rel="noopener noreferrer">Försvarsmakten</a></li>
+                    <li><a href="https://www.fra.se/" target="_blank" rel="noopener noreferrer">FRA</a></li>
+                    <li><a href="https://www.digg.se/" target="_blank" rel="noopener noreferrer">DIGG</a></li>
+                    <li><a href="https://www.pts.se/" target="_blank" rel="noopener noreferrer">PTS</a></li>
+                    <li><a href="https://www.sis.se/" target="_blank" rel="noopener noreferrer">SIS</a></li>
+                    <li><a href="https://www.sis.se/iso27001/dettariso27001/" target="_blank" rel="noopener noreferrer">SIS: ISO 27001 och informationssäkerhet</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Organisationer</h2>
+                <p>Svenska säkerhets- och branschnätverk för kompetens, metod och praktik.</p>
+                <ul>
+                    <li><a href="https://www.dataforeningen.se/" target="_blank" rel="noopener noreferrer">Dataföreningen</a></li>
+                    <li><a href="https://engage.isaca.org/swedenchapter/home" target="_blank" rel="noopener noreferrer">ISACA Sweden Chapter</a></li>
+                    <li><a href="https://www.isc2chapter-sweden.se/" target="_blank" rel="noopener noreferrer">ISC2 Sweden Chapter</a></li>
+                    <li><a href="https://owasp.org/www-chapter-stockholm/" target="_blank" rel="noopener noreferrer">OWASP Stockholm</a></li>
+                    <li><a href="https://www.stoldskyddsforeningen.se/" target="_blank" rel="noopener noreferrer">SSF Stöldskyddsföreningen</a></li>
+                    <li><a href="https://www.informationssakerhet.se/" target="_blank" rel="noopener noreferrer">Informationssäkerhet.se</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Tillsyn, kvalitet &amp; bransch</h2>
+                <p>Källor för kvalitetsarbete, ackreditering, integritetsskydd, föreskrifter och den bredare säkerhetsbranschen.</p>
+                <ul>
+                    <li><a href="https://kvalitetsmagasinet.se/" target="_blank" rel="noopener noreferrer">Kvalitetsmagasinet</a></li>
+                    <li><a href="https://www.swedac.se/" target="_blank" rel="noopener noreferrer">Swedac</a></li>
+                    <li><a href="https://www.msi.se/" target="_blank" rel="noopener noreferrer">Myndigheten för säkerhet och integritetsskydd</a></li>
+                    <li><a href="https://pts.se/regelbibliotek/gallande-foreskrifter-och-allmanna-rad/" target="_blank" rel="noopener noreferrer">PTS: föreskrifter och allmänna råd</a></li>
+                    <li><a href="https://sakerhetsbranschen.se/" target="_blank" rel="noopener noreferrer">SäkerhetsBranschen</a></li>
+                    <li><a href="https://www.securityworldmarket.com/se/Nyheter" target="_blank" rel="noopener noreferrer">SecurityWorldMarket: svenska nyheter</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>EU &amp; Storbritannien</h2>
+                <p>Dataskydd, NIS2, EU-ramverk och brittisk vägledning för cybersäkerhet.</p>
+                <ul>
+                    <li><a href="https://www.edpb.europa.eu/" target="_blank" rel="noopener noreferrer">European Data Protection Board</a></li>
+                    <li><a href="https://eur-lex.europa.eu/" target="_blank" rel="noopener noreferrer">EUR-Lex</a></li>
+                    <li><a href="https://www.enisa.europa.eu/" target="_blank" rel="noopener noreferrer">ENISA</a></li>
+                    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/nis2-directive" target="_blank" rel="noopener noreferrer">NIS2-direktivet</a></li>
+                    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-act" target="_blank" rel="noopener noreferrer">EU Cybersecurity Act</a></li>
+                    <li><a href="https://www.ncsc.gov.uk/" target="_blank" rel="noopener noreferrer">NCSC UK</a></li>
+                    <li><a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer">ICO</a></li>
+                    <li><a href="https://www.bsigroup.com/" target="_blank" rel="noopener noreferrer">BSI Group</a></li>
+                    <li><a href="https://www.cyberessentials.ncsc.gov.uk/" target="_blank" rel="noopener noreferrer">Cyber Essentials</a></li>
+                    <li><a href="https://iasme.co.uk/" target="_blank" rel="noopener noreferrer">IASME</a></li>
+                    <li><a href="https://www.gov.uk/government/collections/cyber-security-guidance-for-business" target="_blank" rel="noopener noreferrer">UK Government Cyber Security Guidance</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>USA &amp; globalt</h2>
+                <p>Ramverk, sårbarheter, hotmodellering, governance och internationella communities.</p>
+                <ul>
+                    <li><a href="https://www.nist.gov/" target="_blank" rel="noopener noreferrer">NIST</a></li>
+                    <li><a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">NIST Cybersecurity Framework</a></li>
+                    <li><a href="https://csrc.nist.gov/publications/sp800" target="_blank" rel="noopener noreferrer">NIST SP 800-serien</a></li>
+                    <li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice" target="_blank" rel="noopener noreferrer">NIST NICE Framework</a></li>
+                    <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">CISA</a></li>
+                    <li><a href="https://www.nsa.gov/Cybersecurity/" target="_blank" rel="noopener noreferrer">NSA Cybersecurity</a></li>
+                    <li><a href="https://www.fbi.gov/investigate/cyber" target="_blank" rel="noopener noreferrer">FBI Cyber Division</a></li>
+                    <li><a href="https://www.cisecurity.org/" target="_blank" rel="noopener noreferrer">Center for Internet Security</a></li>
+                    <li><a href="https://www.mitre.org/" target="_blank" rel="noopener noreferrer">MITRE</a></li>
+                    <li><a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer">MITRE ATT&amp;CK</a></li>
+                    <li><a href="https://owasp.org/" target="_blank" rel="noopener noreferrer">OWASP</a></li>
+                    <li><a href="https://www.sans.org/emea" target="_blank" rel="noopener noreferrer">SANS Institute</a></li>
+                    <li><a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer">ISO</a></li>
+                    <li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank" rel="noopener noreferrer">ISO 27001 overview</a></li>
+                    <li><a href="https://www.iso.org/standard/71670.html" target="_blank" rel="noopener noreferrer">ISO 27701 privacy standard</a></li>
+                    <li><a href="https://www.iso.org/standard/75106.html" target="_blank" rel="noopener noreferrer">ISO 22301 business continuity</a></li>
+                    <li><a href="https://www.thebci.org/" target="_blank" rel="noopener noreferrer">The Business Continuity Institute</a></li>
+                    <li><a href="https://www.isaca.org/" target="_blank" rel="noopener noreferrer">ISACA</a></li>
+                    <li><a href="https://www.isaca.org/resources/cobit" target="_blank" rel="noopener noreferrer">COBIT</a></li>
+                    <li><a href="https://www.isc2.org/" target="_blank" rel="noopener noreferrer">ISC2</a></li>
+                    <li><a href="https://iapp.org/" target="_blank" rel="noopener noreferrer">IAPP</a></li>
+                    <li><a href="https://cloudsecurityalliance.org/" target="_blank" rel="noopener noreferrer">Cloud Security Alliance</a></li>
+                    <li><a href="https://www.first.org/" target="_blank" rel="noopener noreferrer">FIRST</a></li>
+                    <li><a href="https://www.social-engineer.org/" target="_blank" rel="noopener noreferrer">The Official Social Engineering Hub</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="infosec-grid infosec-media" aria-label="Nyheter, medier och säkerhetspoddar">
+            <article class="infosec-card">
+                <h2>Säkerhetsmedier</h2>
+                <p>Löpande nyheter, analys och fördjupning om cyberhot, sårbarheter, incidenter och säkerhetsarbete.</p>
+                <ul>
+                    <li><a href="https://www.infosecurity-magazine.com/" target="_blank" rel="noopener noreferrer">Infosecurity Magazine</a></li>
+                    <li><a href="https://www.darkreading.com/" target="_blank" rel="noopener noreferrer">Dark Reading</a></li>
+                    <li><a href="https://www.cybersecuritydive.com/" target="_blank" rel="noopener noreferrer">Cybersecurity Dive</a></li>
+                    <li><a href="https://informationsecuritybuzz.com/" target="_blank" rel="noopener noreferrer">Information Security Buzz</a></li>
+                    <li><a href="https://www.securityworldmarket.com/se/Nyheter" target="_blank" rel="noopener noreferrer">SecurityWorldMarket</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Teknikpress</h2>
+                <p>Bredare teknik- och nyhetskällor med relevanta säkerhetsspår, privacy, nationell säkerhet och digitalisering.</p>
+                <ul>
+                    <li><a href="https://www.reuters.com/technology/cybersecurity/" target="_blank" rel="noopener noreferrer">Reuters: Cybersecurity</a></li>
+                    <li><a href="https://www.wired.com/category/security/" target="_blank" rel="noopener noreferrer">WIRED: Security</a></li>
+                    <li><a href="https://www.theregister.com/security" target="_blank" rel="noopener noreferrer">The Register: Security</a></li>
+                    <li><a href="https://www.bbc.com/news/topics/cz4pr2gd85qt" target="_blank" rel="noopener noreferrer">BBC News: Cyber-security</a></li>
+                    <li><a href="https://www.forbes.com/cybersecurity/" target="_blank" rel="noopener noreferrer">Forbes: Cybersecurity</a></li>
+                    <li><a href="https://www.nyteknik.se/amnen/cybers%C3%A4kerhet" target="_blank" rel="noopener noreferrer">Ny Teknik: Cybersäkerhet</a></li>
+                    <li><a href="https://computersweden.se/" target="_blank" rel="noopener noreferrer">Computer Sweden</a></li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Program &amp; poddar</h2>
+                <p>Längre samtal och återkommande genomgångar av veckans tekniska säkerhetsfrågor.</p>
+                <ul>
+                    <li><a href="https://twit.tv/shows/security-now" target="_blank" rel="noopener noreferrer">Security Now</a></li>
+                    <li><a href="https://twit.tv/" target="_blank" rel="noopener noreferrer">TWiT</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="infosec-reference" aria-label="Snabbreferens för 2020-talets säkerhetslandskap">
+            <article class="infosec-card">
+                <h2>2020-talets regelbild</h2>
+                <ul>
+                    <li><strong>NIS2-direktivet:</strong> omfattar fler sektorer, skärper kraven på riskhantering och inför tydligare ansvar för ledning och organisation.</li>
+                    <li><strong>Väsentliga och viktiga entiteter:</strong> NIS2 delar in verksamheter efter kritikalitet, med hårdare tillsyn för de mest samhällsviktiga aktörerna.</li>
+                    <li><strong>Sanktionsavgifter:</strong> bristande efterlevnad kan leda till betydande ekonomiska påföljder.</li>
+                    <li><strong>Säkerhetsskydd 2019/2021:</strong> skyddar verksamheter som är viktiga för Sveriges säkerhet och stärker kraven på klassning, roller och kontroll.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Begrepp</h2>
+                <ul>
+                    <li><strong>Sveriges säkerhet:</strong> bredare än det äldre begreppet rikets säkerhet och omfattar fler samhällsviktiga funktioner.</li>
+                    <li><strong>Säkerhetskänslig verksamhet:</strong> verksamhet som är av betydelse för Sveriges säkerhet eller internationella säkerhetsskyddsåtaganden.</li>
+                    <li><strong>Säkerhetsskyddsklassificerade uppgifter:</strong> information som omfattas av sekretess för att förhindra skada för Sveriges säkerhet.</li>
+                    <li><strong>Säkerhetsskyddschef:</strong> funktion som leder och kontrollerar säkerhetsskyddsarbetet i berörd verksamhet.</li>
+                    <li><strong>SCADA:</strong> system för övervakning och styrning av industriella processer i kritisk infrastruktur.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Ordlista &amp; språk</h2>
+                <ul>
+                    <li><strong>Computer Swedens ordlista:</strong> förklaringar av it-termer, förkortningar, namn och jargong inom datorer, internet och digital teknik.</li>
+                    <li><a href="https://it-ord.computersweden.se/" target="_blank" rel="noopener noreferrer">Öppna IT-ordlistan och populära taggar</a></li>
+                    <li>Praktisk som snabb kontroll när säkerhetsartiklar använder facktermer, akronymer eller branschuttryck.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Incidenthantering</h2>
+                <ul>
+                    <li><strong>Identifiera:</strong> upptäck avvikelser i loggar, trafik, beteenden och larm.</li>
+                    <li><strong>Eskalera:</strong> informera IT, säkerhetsfunktion och ansvarig ledning enligt fastställda rutiner.</li>
+                    <li><strong>Begränsa:</strong> isolera system, blockera aktivitet och säkra bevis utan att förstöra spårbarhet.</li>
+                    <li><strong>Följ upp:</strong> utvärdera, förbättra kontroller och återför lärdomar till ISMS och kontinuitetsplanering.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="infosec-deep-dive" aria-label="Fördjupning och arbetsstruktur">
+            <article class="infosec-card">
+                <h2>Mognadsnivåer</h2>
+                <ul>
+                    <li><strong>Grundskydd:</strong> inventering, uppdateringar, MFA, säkerhetskopior, loggning och tydliga behörigheter.</li>
+                    <li><strong>Systematiskt ISMS:</strong> riskbaserat arbetssätt, ansvar, policyer, kontroller och återkommande förbättring.</li>
+                    <li><strong>Kontinuitet:</strong> BIA, återställningsmål, reservrutiner och testad förmåga att fortsätta verksamhet vid störning.</li>
+                    <li><strong>Incidentförmåga:</strong> upptäckt, eskalering, begränsning, återställning, bevisning och lärande efter händelse.</li>
+                    <li><strong>Threat intelligence:</strong> bevakning av sårbarheter, hotaktörer, TTP:er, exploaterade brister och relevans för egna tillgångar.</li>
+                    <li><strong>Revision:</strong> intern granskning, mätetal, avvikelsehantering och spårbar förbättring över tid.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Ramverkskarta</h2>
+                <ul>
+                    <li><strong>ISO 27001:</strong> ledningssystem, ansvar, riskhantering och styrning av informationssäkerhet.</li>
+                    <li><strong>NIST CSF:</strong> funktioner och förmågor: identify, protect, detect, respond och recover.</li>
+                    <li><strong>CIS Controls:</strong> konkreta tekniska och organisatoriska kontroller att prioritera.</li>
+                    <li><strong>MITRE ATT&amp;CK:</strong> angriparbeteenden, tekniker, taktik och detektion kopplad till verkliga angrepp.</li>
+                    <li><strong>NIS2, GDPR och säkerhetsskydd:</strong> krav, ansvar, rapportering, skyddsvärde och tillsyn.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Läsvägar</h2>
+                <ul>
+                    <li><strong>För nybörjare:</strong> börja med KRTS/CIA, grundskydd, Computer Swedens ordlista, CERT-SE och MSB/MCF.</li>
+                    <li><strong>För ledning och styrning:</strong> läs NIS2, ISO 27001, NIST CSF, BIA, kontinuitet och incidentansvar.</li>
+                    <li><strong>För tekniskt försvar:</strong> följ CVE/NVD, CISA KEV, MITRE ATT&amp;CK, SCADA/ICS, loggning, SIEM och sårbarhetshantering.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Scenariofrågor</h2>
+                <ul>
+                    <li><strong>Ransomware:</strong> vilka system isoleras först, vem fattar beslut och när testades återläsning senast?</li>
+                    <li><strong>NIS2:</strong> är verksamheten väsentlig eller viktig, och finns process för riskhantering och incidentrapportering?</li>
+                    <li><strong>Loggning:</strong> vilka händelser samlas in, vem granskar dem och hur länge sparas de?</li>
+                    <li><strong>Säkerhetsskydd:</strong> vilka uppgifter eller funktioner kan påverka Sveriges säkerhet?</li>
+                    <li><strong>Leverantörer:</strong> vilka beroenden är kritiska och hur syns deras incidenter i den egna riskbilden?</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Begrepp på djupet</h2>
+                <ul>
+                    <li><strong>Zero Trust:</strong> lita inte implicit på nätverk eller plats; verifiera identitet, enhet och åtkomst kontinuerligt.</li>
+                    <li><strong>Least Privilege:</strong> ge minsta möjliga behörighet under kortast rimliga tid.</li>
+                    <li><strong>Attack Surface:</strong> alla exponerade vägar där en angripare kan påverka system, data eller användare.</li>
+                    <li><strong>Asset Inventory:</strong> aktuell lista över system, konton, data, integrationer och externa beroenden.</li>
+                    <li><strong>Threat Modeling:</strong> strukturerad analys av vad som kan angripas, av vem, varför och hur.</li>
+                    <li><strong>SBOM:</strong> Software Bill of Materials, en förteckning över komponenter i mjukvara.</li>
+                    <li><strong>Supply Chain Risk:</strong> risker som uppstår genom leverantörer, bibliotek, molntjänster och underleverantörer.</li>
+                    <li><strong>MFA fatigue:</strong> angripare tröttar ut användare med upprepade MFA-pushar tills någon godkänner felaktigt.</li>
+                    <li><strong>EDR/XDR:</strong> verktyg för upptäckt och respons på endpoint- och tvärdomänsignaler.</li>
+                    <li><strong>SIEM/SOAR:</strong> central logganalys, korrelation, larm och automatiserade responsflöden.</li>
+                </ul>
+            </article>
+
+            <article class="infosec-card">
+                <h2>Kontrollfrågor</h2>
+                <ul>
+                    <li>Vet vi vilka våra viktigaste informationstillgångar är?</li>
+                    <li>Har vi testat återställning från backup i praktiken?</li>
+                    <li>Vem får fatta beslut vid en allvarlig incident?</li>
+                    <li>Vilka loggar granskas faktiskt, och vilka samlas bara in?</li>
+                    <li>Finns en aktuell lista över kritiska system och leverantörer?</li>
+                    <li>Är behörigheter kopplade till roll, behov och livscykel?</li>
+                    <li>Har vi övat kommunikation vid incident, internt och externt?</li>
+                    <li>Kan vi visa spårbarhet för beslut, ändringar och åtkomst?</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="infosec-home-checklist" aria-labelledby="infosec-home-checklist-heading">
+            <header class="infosec-section-heading">
+                <h2 id="infosec-home-checklist-heading">Checklista för informationssäkerhet i hemmet 2026</h2>
+                <p>Praktiska kontroller för nätverk, datorer, mobiltelefoner, backup och vardagligt skydd. Bockarna sparas lokalt i webbläsaren.</p>
+            </header>
+
+            <div class="infosec-home-checklist-grid">
+                <article class="infosec-card">
+                    <h3>Nätverk &amp; router</h3>
+                    <ul class="infosec-checklist-items">
+                        <li><label><input type="checkbox" data-infosec-check="router-firmware"><span><strong>Uppdatera router-firmware:</strong> kontrollera tillverkarens hemsida för senaste versionen och täpp till kända säkerhetshål.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="router-wpa2-aes"><span><strong>Aktivera WPA2 med AES:</strong> använd minst WPA2/AES för att minska risken för avlyssning över Wi-Fi.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="router-guest-network"><span><strong>Skapa gästnätverk:</strong> isolera besökares enheter och osäkra IoT-prylar från känsligare interna enheter.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="router-disable-wps"><span><strong>Stäng av WPS:</strong> minska angreppsytan och undvik förenklade anslutningsmetoder som kan missbrukas.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="router-mac-filter"><span><strong>Överväg MAC-adressfiltrering:</strong> använd som extra ordningslager, inte som ersättning för stark kryptering.</span></label></li>
+                    </ul>
+                </article>
+
+                <article class="infosec-card">
+                    <h3>Operativsystem &amp; härdning</h3>
+                    <ul class="infosec-checklist-items">
+                        <li><label><input type="checkbox" data-infosec-check="os-auto-updates"><span><strong>Automatisera säkerhetsuppdateringar:</strong> låt Windows, macOS eller Linux installera kritiska patchar löpande.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="os-standard-account"><span><strong>Separera användarkonton:</strong> använd standardkonto till vardags och administratörskonto bara när det behövs.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="os-firewall"><span><strong>Aktivera inbyggd brandvägg:</strong> kontrollera att systemets brandvägg övervakar in- och utgående trafik.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="os-uefi-password"><span><strong>Lösenordsskydda BIOS/UEFI:</strong> skydda startordning och firmwareinställningar mot fysisk manipulation.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="os-remove-unused"><span><strong>Rensa oanvänd mjukvara:</strong> avinstallera program som inte längre används för att minska attackytan.</span></label></li>
+                    </ul>
+                </article>
+
+                <article class="infosec-card">
+                    <h3>Dataskydd, backup &amp; appar</h3>
+                    <ul class="infosec-checklist-items">
+                        <li><label><input type="checkbox" data-infosec-check="data-disk-encryption"><span><strong>Aktivera diskkryptering:</strong> använd BitLocker, FileVault, dm-crypt eller motsvarande skydd vid stöld.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="data-vpn-public"><span><strong>Använd VPN på osäkra nätverk:</strong> kryptera trafiken när du använder offentliga eller okända Wi-Fi-nät.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="data-https-check"><span><strong>Verifiera HTTPS:</strong> kontrollera att webbplatser använder giltiga certifikat innan du lämnar känsliga uppgifter.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="data-321-backup"><span><strong>Implementera 3-2-1 backup:</strong> ha tre kopior på två olika medier, varav minst en är separerad från datorn.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="apps-trusted-sources"><span><strong>Hämta program från betrodda källor:</strong> använd officiella butiker, pakethanterare eller tillverkarens egen webbplats.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="apps-permissions"><span><strong>Granska appbehörigheter:</strong> kontrollera åtkomst till filer, plats, mikrofon, kamera och kontakter.</span></label></li>
+                    </ul>
+                </article>
+
+                <article class="infosec-card">
+                    <h3>iPhone och iOS</h3>
+                    <ul class="infosec-checklist-items">
+                        <li><label><input type="checkbox" data-infosec-check="ios-auto-updates"><span><strong>Automatisera iOS-uppdateringar:</strong> håll systemet uppdaterat med senaste säkerhetspatcharna.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="ios-strong-code"><span><strong>Använd biometri och stark kod:</strong> kombinera Face ID eller Touch ID med en stark alfanumerisk kod.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="ios-app-store"><span><strong>Installera från App Store:</strong> håll en strikt app-policy och undvik okända installationsvägar.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="ios-permissions"><span><strong>Granska integritetsinställningar:</strong> se över platsdata, mikrofon, kamera, kontakter och spårning.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="ios-vpn-public"><span><strong>Aktivera VPN vid offentligt Wi-Fi:</strong> skydda trafik på hotell, caféer, stationer och andra öppna nät.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="ios-encrypted-backup"><span><strong>Säkerställ krypterad backup:</strong> använd iCloud med avancerat dataskydd eller krypterad lokal backup.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="ios-auto-join"><span><strong>Stäng av automatiska anslutningar:</strong> undvik att telefonen självmant ansluter till riskabla kända nätverk.</span></label></li>
+                    </ul>
+                </article>
+
+                <article class="infosec-card">
+                    <h3>Android</h3>
+                    <ul class="infosec-checklist-items">
+                        <li><label><input type="checkbox" data-infosec-check="android-updates"><span><strong>Säkerställ system- och Play-uppdateringar:</strong> kontrollera både tillverkarens firmware och Googles säkerhetsuppdateringar.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-encryption"><span><strong>Aktivera enhetskryptering:</strong> skydda data om telefonen tappas bort eller blir stulen.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-pin-biometric"><span><strong>Använd biometri och PIN:</strong> kombinera fingeravtryck eller ansiktsigenkänning med en stark PIN-kod.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-play-protect"><span><strong>Begränsa appkällor:</strong> håll dig till Google Play och kontrollera att Play Protect är aktivt.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-permissions"><span><strong>Hantera behörigheter granulärt:</strong> ge appar endast den åtkomst de verkligen behöver.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-vpn"><span><strong>Skydda nätverkstrafiken:</strong> använd VPN för trådlösa nät där du inte litar på miljön.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-work-profile"><span><strong>Isolera arbetskonto:</strong> använd arbetsprofil när känsliga arbetsdata behöver separeras från privata appar.</span></label></li>
+                        <li><label><input type="checkbox" data-infosec-check="android-backup"><span><strong>Säkerhetskopiera till betrodda moln:</strong> gör regelbundna backuper för snabb återställning vid förlust eller systemfel.</span></label></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="infosec-feed" aria-labelledby="infosec-feed-heading" aria-live="polite" aria-busy="true">
+            <div>
+                <h2 id="infosec-feed-heading">Bevakningsflöde</h2>
+                <p>Textbaserad lista från öppna säkerhetsflöden. Lägg till fler källor i <code>infosec.js</code>.</p>
+            </div>
+            <div class="infosec-feed-status" id="infosec-feed-status">Hämtar säkerhetsflöden...</div>
+            <ul class="infosec-feed-list" id="infosec-feed-list"></ul>
+        </section>
+
+        <section class="infosec-principles" aria-labelledby="infosec-principles-heading">
+            <h2 id="infosec-principles-heading">CIA, KRTS &amp; Defense in Depth</h2>
+            <dl>
+                <div>
+                    <dt>Konfidentialitet</dt>
+                    <dd>Information ska bara vara tillgänglig för behöriga.</dd>
+                </div>
+                <div>
+                    <dt>Riktighet</dt>
+                    <dd>Information ska vara korrekt, komplett och skyddad mot otillåten ändring.</dd>
+                </div>
+                <div>
+                    <dt>Tillgänglighet</dt>
+                    <dd>Information och tjänster ska finnas när verksamheten behöver dem.</dd>
+                </div>
+                <div>
+                    <dt>Spårbarhet</dt>
+                    <dd>Händelser ska kunna följas upp, verifieras och granskas.</dd>
+                </div>
+                <div>
+                    <dt>Icke-förnekan</dt>
+                    <dd>Parter ska inte i efterhand kunna förneka sin del i en transaktion eller händelse.</dd>
+                </div>
+                <div>
+                    <dt>Defense in Depth</dt>
+                    <dd>Flera oberoende säkerhetslager minskar risken när en enskild kontroll brister.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <nav class="podcast-nav" aria-label="Tillbaka">
+            <a class="back-arrow-link" href="https://privat.bahnhof.se/wb111178/" aria-label="Till startsidan" title="Till startsidan">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Till startsidan</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <span class="footer-note">
+            Källrummet samlar nyheter, arkiv, forskning, poddar och musikval.<br>
+            © 2026 Personlig, icke-kommersiell webbplats.
+        </span>
+    </footer>
+
+    <script src="infosec.js?v=2026-05-20-9" defer></script>
+</body>
+</html>
